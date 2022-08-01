@@ -1,0 +1,240 @@
+.navbar .progress {
+    height: 5px;
+    margin-bottom: 5px;
+}
+
+.dropdown-menu {
+    font-size: 1em;
+}
+
+.problem .input-sm {
+    font-size: 1em;
+    height: 2em !important;
+    padding: 0.4em;
+    line-height: 1em;
+    min-height: 28px;
+	white-space:nowrap;
+}
+
+.navbar-nav {
+    font-size: 14px;
+}
+
+label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+blockquote {
+    font-size: 1em;
+    border-color: sandybrown;
+    padding-right: 0;
+}
+
+.list-group {
+    margin-bottom: 0px;
+}
+
+li.solved blockquote {
+    border-color: green;
+}
+
+iframe.zero-size {
+    width: 0;
+    height: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+input.blank,blank {
+    border-radius: 4px;
+    padding: 0px 6px;
+    border: 1px solid darkgray;
+    min-width: 60px;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+	height: 1.5em;
+	cursor: pointer;
+}
+
+blank:hover {
+	background: #ffd;
+}
+
+div.blank {
+    min-width: 50px;
+}
+
+label[draggable] {
+    box-shadow: none;
+    cursor: move;
+}
+
+span.detail {
+    line-height: 30px;
+    /*font-size: 14px;*/
+}
+
+span.detail a {
+    color: inherit;
+}
+
+input.blank:focus {
+    border-color: darkcyan;
+}
+
+.item-mark {
+    width: 20px;
+    margin-right: 5px;
+    height: 100%;
+}
+
+.item-correct {
+    background: url(/images/checked.png) no-repeat right center;
+}
+
+.item-incorrect {
+    background: url(/images/error.png) no-repeat right center;
+}
+
+.problem {
+    margin-top: 3em;
+    font-family: Times New Roman;
+    position: relative;
+}
+
+.problem .marks {
+	position:absolute;
+	top: 0;
+	right: 0;
+	color: red;
+}
+
+.problem div.player {
+    width: 24px;
+    height: 24px;
+    background: url(/www/images/play_hover.png) no-repeat center;
+    background-size: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.problem .audio-player {
+    height: 34px;
+    padding: 4px;
+    width: 247px;
+    margin-top: 8px;
+}
+
+.problem .audio-player .progress {
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+    height: 7px;
+    margin-top: 9px;
+}
+
+.problem .audio-player audio {
+    width: 0px;
+    height: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.problem .audio-player .button {
+    width: 24px;
+    height: 24px;
+    background: url(/www/images/play_hover.png) no-repeat center;
+    background-size: 100%;
+    display: block;
+    cursor: pointer;
+    float: left;
+}
+
+.problem .audio-player .button.pause {
+    background-image: url(/www/images/pause_hover.png);
+}
+
+.problem .audio-player .button:hover {
+    background-image: url(/www/images/play_normal.png);
+}
+
+.problem .audio-player .button.pause:hover {
+    background-image: url(/www/images/pause_normal.png);
+}
+
+.problem blockquote {
+    line-height: 2em;
+    margin: 10px 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+.problem blockquote .row {
+	margin-right: 0px;
+}
+
+.problem blockquote .row .col-sm-5 {
+	padding-right: 0px;
+}
+	
+.problem ul {
+    list-style: none;
+}
+
+#paper label:hover {
+    background: #e1fce8;
+}
+
+#paper ins h4 {
+    font-weight: bold;
+    padding-top: 1em;
+    font-size: 1.5em;
+}
+
+#paper span.direction {
+    display: block;
+    text-decoration: none !important;
+}
+
+#paper .problem span.direction {
+    font-weight: bold;
+}
+
+#paper span.form-control {
+    height: auto;
+    min-height: 30px;
+}
+
+div.radio {
+    margin: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    padding: 2px;
+    display: inline-block;
+}
+
+div.radio .checked {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: black;
+}
+
+div.checkbox {
+    margin: 0;
+    width: 13px;
+    height: 13px;
+    border: 1px solid gray;
+    padding: 2px;
+    display: inline-block;
+}
+
+div.checkbox .checked {
+    width: 7px;
+    height: 7px;
+    background: black;
+}

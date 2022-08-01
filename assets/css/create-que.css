@@ -1,0 +1,101 @@
+.dv100{height: 100px;border-radius: 5px;border:1px solid lightgray;margin:10px;color: #524D4D;}
+.dv50{height: 50px;border:1px solid lightgray;margin:10px;color: #524D4D;margin-top: 2px;}
+.lbl{padding: 20px 0px 0px 0px; text-align: center;}
+.spn{cursor: pointer;}
+.pd-8{padding: 8px;}
+.pd-10{padding: 10px;}
+.note-editable{height: 70px !important;}
+.inp-que{margin-left: 5px;width: 93%;}
+.brd-gray{border:1px solid lightgray;}
+.bg-gray{background:#F8F8F8;border:none !important;}
+.pd-5{padding: 5px;}
+.mrt-5{margin-top: 5px;}
+.mrl-20{margin-left: 20px;}
+.mrl-10{margin-left: 10px;}
+.tag-img{margin: 15px 0px 0px 15px;}
+.mrg-10{margin:10px;}
+.req-que-sp{margin:15px 0px 0px 0px;}
+.pdt-5{padding-top: 5px;}
+.pdt-2{padding-top: 2px;}
+.wd4{width: 247px;height: 215px}
+.wd2{width: 524px;height: 215px}
+.wd3{width: 340px;height: 215px}
+.show-drag:hover .drag-me {
+    display:block;
+}
+.show-drag:hover .horizon-opt {
+    background: #EEEEEE;
+}
+
+.horizon{height: 150px;width: 250px;}
+.horizon-opt{margin-top: -2px;height: 30px;margin-left: 0px;}
+/*.show-drag:hover .{background: lightgray;}*/
+.drag-me{display: none;position: absolute;cursor: pointer;}
+#sortable li{
+    list-style:none;
+    margin:15px;
+    width: 977px
+}
+.cursor .updImg{cursor: pointer;}
+.que-sel{height: 35px;}
+/* toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* toggle switch */

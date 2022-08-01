@@ -1,0 +1,133 @@
+@media (max-width: 1200px) {
+.captionSliderHero p {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.btnContact {
+    font-size: 15px;
+}
+.captionSliderHero h2 {
+    font-size: 24px;
+}
+
+.pricingSection {margin-top: -150px;}
+
+section.pricingSection.selectPlanPrice {padding-top: 50px; margin-top: 0px;}
+.navbar-inverse .navbar-nav>li>a {padding: 15px 10px;}
+.searching {
+    padding-left: 1%;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+.headerHero {min-height: 650px;}
+.companyhomeBanner .bannerTextBox h1 {font-size: 42px;}
+.companyhomeBanner .bannerTextBox p {font-size: 20px;}
+
+.companyhomeBanner {height: 460px;}
+
+}
+
+
+
+@media (max-width: 991px) {
+.courseImg{height: 150px;}
+.courseImg img{min-height: 150px;}
+
+.catalogBox {margin-bottom: 20px;}
+.navbar-inverse .navbar-nav>li>a {padding: 15px 10px;font-size: 14px;}
+.searching { padding-left: 0%;}
+.searching .autocomplete { width: 230px !important;}
+.cover-text .bannerTextBox h1 {font-size: 48px;}
+.cover-text .bannerTextBox { margin-top: 7%;}
+.pricingSection .width_wrapper{
+	overflow-x: scroll;
+}
+
+}
+
+
+
+@media (max-width: 768px) {
+.headerHero {min-height: 100vh;}
+}
+
+
+
+@media (max-width: 767px) {
+.navbar-inverse .navbar-toggle .icon-bar {background-color: #000;}
+.navbar-nav {float: left;width: 100%;}
+.signupBorder {border-left: none;}
+
+.pricingSection {margin-top: -100px;}
+.searching .autocomplete {width: 100% !important;}	
+.searching {position: relative;float: none; padding-left: 0%; width:100%;}
+.searching form{width: 100%;}
+.header-bg {position: relative; z-index: 999;}
+.trainingPic{margin-bottom: 15px;}
+}
+
+
+
+@media (max-width: 640px) {
+.catalogTab li a {padding: 15px 10px; font-size: 14px;}
+
+.carousel-indicators .active,
+.carousel-indicators li {width: 50px; height: 50px;}
+.companyhomeBanner {height: auto; padding: 60px 0px;}
+.companyhomeBanner .bannerTextBox h1 {font-size: 24px; margin-bottom: 10px;}
+.companyhomeBanner .bannerTextBox p {font-size: 16px;}
+.companyhomeBanner .bannerTextBox{margin-top: 10%; margin-bottom: 10%;}
+
+.wrapNext {margin-top: 30px;}
+.wrapNext a {padding: 0px 60px; line-height: 50px; font-size: 18px; height: 50px;}
+
+.pricingSection .planBox {width: 100%; margin-bottom: 30px;}
+.pricingSection .middleSection {transform: scale(1);}
+.pricingSection {padding-bottom: 60px;}
+section.pricingSection.selectPlanPrice {padding-top: 0px;}
+.cover-text {padding: 35px 0px;}
+.cover-text .bannerTextBox {margin-top: 5%;}
+.cover-text .bannerTextBox h1 {font-size:19px; margin-bottom: 10px;}
+.cover-text .bannerTextBox p{font-size: 14px;line-height: 18px;}
+.companyhomeBanner {height: 145px;padding: 5px 0px;}
+.cover-text .bannerTextBox:nth-child(2) {
+    margin-top: 0;
+}
+.searching { width: calc(100% - 0px);}
+.searching form { width: 100%; position: inherit;top: 0px;}
+}
+
+
+
+@media (max-width: 480px) {
+.loginRow {margin-bottom: 10px;}
+.loginRow .login50{width: 100%; padding: 0px;}
+.login50.paddR5 {margin-bottom: 10px;}
+
+.loginRow .signin{margin: 15px auto 0px; float: none; display: block;}
+.loginRow .loginlink {display: block; float: none; margin-top: 10px; text-align: center;}
+
+.coursePrice .col-xs-3,
+.coursePrice .col-xs-9{width: 100%;}
+
+.catalogTab li {display: block;text-align: left; margin: 0px;}
+.col-full{width: 100%;}
+
+.col-sm-12.coursePrice .btnBlue{padding: 0px 15px;}
+
+.btnBlue {padding: 0px 15px;}
+.paginationBox .pagination li a {padding: 6px 14px;}
+
+.pricingTabs li {width: 140px;}
+
+.headerHero {min-height: 70vh;}
+.sectionBox {padding: 25px 0px;}
+}
+@media (max-width: 320px){
+.companyhomeBanner {
+    height: 155px;
+}

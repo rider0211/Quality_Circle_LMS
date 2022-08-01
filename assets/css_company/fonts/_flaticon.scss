@@ -1,0 +1,111 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 28/05/2018 19:40
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-edit:before { content: "\f100"; }
+.flaticon-delete:before { content: "\f101"; }
+.flaticon-check:before { content: "\f102"; }
+.flaticon-interface-1:before { content: "\f103"; }
+.flaticon-house-1:before { content: "\f104"; }
+.flaticon-mortgage:before { content: "\f105"; }
+.flaticon-house:before { content: "\f106"; }
+.flaticon-mountain:before { content: "\f107"; }
+.flaticon-id-card:before { content: "\f108"; }
+.flaticon-building:before { content: "\f109"; }
+.flaticon-houses:before { content: "\f10a"; }
+.flaticon-correct:before { content: "\f10b"; }
+.flaticon-play-button:before { content: "\f10c"; }
+.flaticon-phone-call:before { content: "\f10d"; }
+.flaticon-placeholder:before { content: "\f10e"; }
+.flaticon-buildings:before { content: "\f10f"; }
+.flaticon-coin:before { content: "\f110"; }
+.flaticon-eye:before { content: "\f111"; }
+.flaticon-like:before { content: "\f112"; }
+.flaticon-interface:before { content: "\f113"; }
+.flaticon-magnifying-glass:before { content: "\f114"; }
+.flaticon-shop:before { content: "\f115"; }
+.flaticon-trees:before { content: "\f116"; }
+.flaticon-park:before { content: "\f117"; }
+.flaticon-auction:before { content: "\f118"; }
+.flaticon-river:before { content: "\f119"; }
+.flaticon-blueprint:before { content: "\f11a"; }
+.flaticon-apartments:before { content: "\f11b"; }
+.flaticon-industry:before { content: "\f11c"; }
+.flaticon-plant:before { content: "\f11d"; }
+.flaticon-social:before { content: "\f11e"; }
+.flaticon-arrows:before { content: "\f11f"; }
+.flaticon-social-media-1:before { content: "\f120"; }
+.flaticon-youtube:before { content: "\f121"; }
+.flaticon-social-media:before { content: "\f122"; }
+.flaticon-facebook:before { content: "\f123"; }
+    
+    $font-Flaticon-edit: "\f100";
+    $font-Flaticon-delete: "\f101";
+    $font-Flaticon-check: "\f102";
+    $font-Flaticon-interface-1: "\f103";
+    $font-Flaticon-house-1: "\f104";
+    $font-Flaticon-mortgage: "\f105";
+    $font-Flaticon-house: "\f106";
+    $font-Flaticon-mountain: "\f107";
+    $font-Flaticon-id-card: "\f108";
+    $font-Flaticon-building: "\f109";
+    $font-Flaticon-houses: "\f10a";
+    $font-Flaticon-correct: "\f10b";
+    $font-Flaticon-play-button: "\f10c";
+    $font-Flaticon-phone-call: "\f10d";
+    $font-Flaticon-placeholder: "\f10e";
+    $font-Flaticon-buildings: "\f10f";
+    $font-Flaticon-coin: "\f110";
+    $font-Flaticon-eye: "\f111";
+    $font-Flaticon-like: "\f112";
+    $font-Flaticon-interface: "\f113";
+    $font-Flaticon-magnifying-glass: "\f114";
+    $font-Flaticon-shop: "\f115";
+    $font-Flaticon-trees: "\f116";
+    $font-Flaticon-park: "\f117";
+    $font-Flaticon-auction: "\f118";
+    $font-Flaticon-river: "\f119";
+    $font-Flaticon-blueprint: "\f11a";
+    $font-Flaticon-apartments: "\f11b";
+    $font-Flaticon-industry: "\f11c";
+    $font-Flaticon-plant: "\f11d";
+    $font-Flaticon-social: "\f11e";
+    $font-Flaticon-arrows: "\f11f";
+    $font-Flaticon-social-media-1: "\f120";
+    $font-Flaticon-youtube: "\f121";
+    $font-Flaticon-social-media: "\f122";
+    $font-Flaticon-facebook: "\f123";

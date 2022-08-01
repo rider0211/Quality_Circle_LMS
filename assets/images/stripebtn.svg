@@ -1,0 +1,217 @@
+<svg id="button-default" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 213 47"
+     width="213"
+     height="47"
+>
+    <defs>
+        <style>
+            .logo-text{fill:#fff;}
+            .card-button-seperator {fill: #fff;}
+            .button-rail{fill:#1a1f71;}
+            .card-art-shadow{opacity:.3;mix-blend-mode:overlay;}
+            .brand-logo-separator {fill:#999;}
+            .height34 .button-rail {rx:3;ry:3;}
+            .height47 .button-rail {rx:4;ry:4;}
+            .height94 .button-rail {rx:6;ry:6;}
+            .height34 .card-button-seperator {width:2px;}
+            .height47 .card-button-seperator {width:1px;}
+            /*  Neutral Button Styles */
+            .neutral .button-rail {fill:url(#neutral-button-gradient);stroke:#aaaaaa;}
+            .neutral .logo-text {fill:#1a1f71;}
+            .neutral .spinner-primary {stroke:#1a1f71;}
+            /* Co brand toggling */
+            .cobrand-logos {opacity:0;}
+            .cobrand .non-cobrand-logos {opacity:0;}
+            .cobrand .cobrand-logos {opacity:1;}
+            .card-button-seperator.disable {opacity:0;}
+            .cls-1{fill:#1a1f71;}
+            .cls-2{fill:url(#linear-gradient);}
+            .chevron-image {height:100%;width:77;x:0;y:0;}
+            .cls-6{isolation:isolate;}
+            .cls-7{opacity:0.23;mix-blend-mode:multiply;}
+            .cls-3{fill:url(#linear-gradient_neutral);}
+            .cls-4{fill:#aaa;}
+            .cls-5{fill:#1a1f71;}
+            .card-art-image-hide{opacity:0;}
+            .standard-logo-group{x:50%;y:50%;}
+            .loading-logo-group{x:25%;y:50%;}
+            
+        </style>
+
+        <clipPath id="card-art-sheen-mask">
+            <rect width="77" height="55" fill="#fff"/>
+        </clipPath>
+
+        <rect id="path-2" x="0" y="0" width="73" height="45" rx="3"></rect>
+        <rect id="card-art-sheen" height="165" width="20" x="0" y="0" fill="url(#card-art-sheen-gradient)" opacity="0.5" transform="rotate(25)"/>
+        <rect id="logo-seperator" class="brand-logo-separator"  x="0" y="0" width="2" height="40"/>
+
+        <linearGradient id="linear-gradient_neutral" x1="38.64" y1="4.23" x2="38.64" y2="48.26" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="0.05" stop-color="#fdfdfd"/>
+            <stop offset="0.07" stop-color="#f6f6f6"/>
+            <stop offset="0.08" stop-color="#f2f2f2"/>
+            <stop offset="1" stop-color="#eee"/>
+        </linearGradient>
+                <linearGradient id="linear-gradient" x1="57.88" y1="12.63" x2="117.26" y2="148.79" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#cfd0d0"/><stop offset="0.05" stop-color="#d4d5d5"/>
+            <stop offset="0.33" stop-color="#ececec"/><stop offset="0.59" stop-color="#fafafa"/>
+            <stop offset="0.82" stop-color="#fff"/>
+        </linearGradient>
+        <linearGradient id="neutral-button-gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+            <stop offset="10%" stop-color="#f2f2f2" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#eeeeee" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="card-art-sheen-gradient">
+            <stop offset="0%" stop-color="#fff" stop-opacity="0.1"/>
+            <stop offset="20%" stop-color="#fff" stop-opacity="0.3"/>
+            <stop offset="50%" stop-color="#fff" stop-opacity="0.6"/>
+            <stop offset="70%" stop-color="#fff" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#fff" stop-opacity="0.1"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#CFD0D0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-2.7%" y="-2.2%" width="105.5%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.23 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter id='cardShadowFilter'>
+            <feGaussianBlur in="sourceGraphic" stdDeviation="30"/>
+        </filter>
+        <animate id="cardForward1" attributeName="x" dur="0.2" values="0;10;20" keyTimes="0;0.5;1" begin="0s;cardBackward2.end+5s" xlink:href="#chevron-element-standard"/>
+        <animate id="cardBackward1" attributeName="x" dur="0.1" values="20;10;0" keyTimes="0;0.5;1" begin="cardForward1.end" xlink:href="#chevron-element-standard"/>
+        <animate id="cardForward2" attributeName="x" dur="0.1" values="0;10;20" keyTimes="0;0.5;1" begin="cardBackward1.end"  xlink:href="#chevron-element-standard"/>
+        <animate id="cardBackward2" attributeName="x" dur="0.2" values="20;10;0" keyTimes="0;0.5;1" begin="cardForward2.end" xlink:href="#chevron-element-standard"/>
+        <animate id="showSheen" attributeName="opacity" attributeType="CSS" dur="0.1" values="0;0.5" keyTimes="0;1" begin="cardForward2.end" fill="freeze" xlink:href="#sheen-view"/>
+        <animate id="sheenForward" attributeName="x" dur="0.8" values="0;130;260" keyTimes="0;0.5;1" begin="showSheen.end" xlink:href="#sheen-view"/>
+        <animate id="hideSheen" attributeName="opacity" attributeType="CSS" dur="0.1" values="0.5;0" keyTimes="0;1" begin="sheenForward.end" fill="freeze" xlink:href="#sheen-view"/>
+        <animate id="sheenBackward" attributeName="x" dur="2" values="140;70;0" keyTimes="0;0.5;1" begin="hideSheen.end" xlink:href="#sheen-view"/>
+        <animate attributeName="opacity" dur=".3s" values="0;1" keyTimes="0;1" begin=".2s" fill="freeze" xlink:href="#{SPINNER_ID_PLACEHOLDER}"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur=".5s" repeatCount="indefinite" xlink:href="#{SPINNER_ID_PLACEHOLDER}"/>
+        <animate attributeName="opacity" dur=".2s" values="1;0" keyTimes="0;1" begin=".2s" fill="freeze" xlink:href="#{LOGO_GROUP_LOADING_PLACEHOLDER}"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" to="-50 0" dur="0.2s" fill="freeze" xlink:href="#{LOGO_GROUP_SLIDING_PLACEHOLDER}"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" to="-140 5" dur="0.2s" fill="freeze" xlink:href="#{SLIDING_STANDARD_PLACEHOLDER}"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" to="-140 5" dur="0.2s" fill="freeze" xlink:href="#{SLIDING_COMPACT_PLACEHOLDER}"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" to="{SLIDING_END_PLACEHOLDER} 0" dur="0.3s" fill="freeze" xlink:href="#{SLIDING_CARD_ART_PLACEHOLDER}"/>
+
+
+        <g id="chevron-image-standard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Artboard-Copy">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <polygon id="Path-2" fill="#1A1F71" points="27 10 39.5 22 27 36 38 36 51 22 38 10"></polygon>
+            </g>
+        </g>
+        <g id="chevron-image-neutral" class="cls-6">
+            <rect class="cls-3" x="2.64" y="3.42" width="72" height="45" rx="2.5" ry="2.5"/>
+            <path class="cls-4" d="M72.14,3.92a2,2,0,0,1,2,2v40a2,2,0,0,1-2,2h-67a2,2,0,0,1-2-2v-40a2,2,0,0,1,2-2h67m0-1h-67a3,3,0,0,0-3,3v40a3,3,0,0,0,3,3h67a3,3,0,0,0,3-3v-40a3,3,0,0,0-3-3Z"/>
+            <polygon class="cls-5" points="40.17 38.77 29.14 38.77 41.8 25.93 29.14 13.07 40.17 13.07 52.82 25.93 40.17 38.77"/>
+        </g>
+        {CO_BRAND_LOGO_PLACEHOLDER}
+        <g id="visa-checkout-logo-standard">
+            <path d="M 134.853 29.787 C 133.722 30.207 132.562 30.541 131.381 30.787 C 130.344 30.999 129.289 31.109 128.231 31.117 C 125.935 31.227 123.686 30.454 121.944 28.957 C 120.364 27.486 119.507 25.396 119.6 23.237 C 119.591 21.732 119.843 20.237 120.345 18.817 C 120.847 17.432 121.594 16.149 122.55 15.027 C 123.677 13.696 125.09 12.637 126.683 11.927 C 128.319 11.196 130.093 10.824 131.884 10.837 C 132.894 10.842 133.9 10.959 134.884 11.187 C 135.955 11.449 136.996 11.818 137.993 12.287 L 137.178 16.287 C 136.414 15.691 135.561 15.219 134.65 14.887 C 133.776 14.583 132.856 14.43 131.93 14.437 C 129.978 14.408 128.116 15.265 126.868 16.767 C 125.496 18.389 124.78 20.466 124.861 22.587 C 124.784 23.884 125.234 25.157 126.107 26.117 C 127.034 27.008 128.291 27.471 129.575 27.397 C 130.531 27.383 131.479 27.221 132.386 26.917 C 133.542 26.527 134.658 26.024 135.718 25.417 Z" transform="matrix(0.999999, -0.001153, 0.001153, 0.999999, -0.024107, 0.148515)"/>
+            <path d="M 153.831 21.758 L 152.051 30.688 L 147.351 30.688 L 148.87 23.068 C 148.98 22.568 149.051 22.148 149.111 21.808 C 149.164 21.537 149.194 21.263 149.202 20.988 C 149.232 20.508 149.063 20.038 148.734 19.688 C 148.375 19.362 147.898 19.196 147.414 19.228 C 146.459 19.221 145.548 19.634 144.923 20.358 C 144.165 21.25 143.666 22.332 143.479 23.488 L 142.051 30.688 L 137.351 30.688 L 141.375 10.328 L 146.075 10.328 L 144.535 18.178 C 145.292 17.41 146.172 16.775 147.138 16.298 C 147.994 15.889 148.93 15.677 149.878 15.678 C 151.021 15.603 152.146 15.985 153.007 16.738 C 153.78 17.538 154.178 18.627 154.104 19.738 C 154.101 20.049 154.08 20.359 154.043 20.668 C 154.002 21.008 153.942 21.378 153.861 21.778" transform="matrix(0.999999, -0.001153, 0.001153, 0.999999, -0.023549, 0.168045)"/>
+            <path d="M 171.062 23.878 L 170.901 24.628 L 159.901 24.628 C 159.901 24.678 159.901 24.758 159.901 24.858 C 159.901 24.958 159.901 25.038 159.901 25.088 C 159.84 25.893 160.157 26.68 160.758 27.218 C 161.508 27.741 162.415 27.992 163.327 27.928 C 164.383 27.915 165.432 27.764 166.448 27.478 C 167.638 27.148 168.793 26.706 169.9 26.158 L 169.175 29.798 C 168.067 30.207 166.926 30.522 165.764 30.738 C 164.626 30.945 163.471 31.049 162.314 31.048 C 160.428 31.155 158.565 30.592 157.056 29.458 C 155.782 28.333 155.095 26.685 155.191 24.988 C 155.193 23.877 155.398 22.775 155.795 21.738 C 156.195 20.679 156.782 19.7 157.528 18.848 C 158.405 17.817 159.508 17.003 160.751 16.468 C 162.071 15.913 163.491 15.638 164.922 15.658 C 166.636 15.566 168.319 16.131 169.63 17.238 C 170.813 18.333 171.452 19.896 171.375 21.508 C 171.373 21.875 171.35 22.243 171.304 22.608 C 171.248 23.034 171.171 23.458 171.072 23.878 M 166.655 21.738 C 166.678 21.622 166.695 21.505 166.705 21.388 C 166.712 21.274 166.712 21.161 166.705 21.048 C 166.736 20.431 166.509 19.829 166.077 19.388 C 165.617 18.961 165.005 18.738 164.378 18.768 C 163.535 18.742 162.709 19.007 162.037 19.518 C 161.342 20.1 160.83 20.871 160.565 21.738 Z" transform="matrix(0.999999, -0.001153, 0.001153, 0.999999, -0.02682, 0.188282)"/>
+            <path d="M 186.831 16.449 L 186.066 20.269 C 185.49 19.86 184.866 19.524 184.207 19.269 C 183.632 19.054 183.023 18.942 182.408 18.939 C 181 18.89 179.637 19.447 178.666 20.469 C 177.682 21.536 177.159 22.949 177.212 24.399 C 177.155 25.285 177.482 26.152 178.109 26.779 C 178.817 27.379 179.731 27.68 180.658 27.619 C 181.39 27.621 182.118 27.514 182.818 27.299 C 183.531 27.066 184.205 26.729 184.819 26.299 L 184.095 30.129 C 183.333 30.396 182.55 30.601 181.754 30.739 C 180.971 30.872 180.178 30.939 179.384 30.939 C 177.49 31.09 175.603 30.57 174.056 29.469 C 172.788 28.37 172.103 26.745 172.201 25.069 C 172.199 23.876 172.432 22.693 172.885 21.589 C 173.36 20.473 174.04 19.456 174.888 18.589 C 175.808 17.628 176.924 16.878 178.161 16.389 C 179.522 15.892 180.963 15.652 182.412 15.679 C 183.915 15.681 185.406 15.955 186.811 16.489" transform="matrix(0.999999, -0.001153, 0.001153, 0.999999, -0.02677, 0.206995)"/>
+            <polygon points="190.615 10.26 195.325 10.26 193.162 21.29 199.488 15.97 205.018 15.97 196.49 22.75 202.671 30.63 197.321 30.63 192.568 24.31 191.331 30.63 186.641 30.63 190.615 10.26" transform="matrix(0.999999, -0.001153, 0.001153, 0.999999, -0.023443, 0.225809)"/>
+            <path d="M 212.372 15.602 C 214.232 15.495 216.065 16.087 217.51 17.262 C 218.775 18.419 219.459 20.079 219.375 21.792 C 219.376 22.895 219.179 23.99 218.791 25.022 C 218.386 26.067 217.799 27.032 217.058 27.872 C 216.197 28.879 215.119 29.676 213.905 30.202 C 212.62 30.742 211.237 31.011 209.844 30.992 C 207.996 31.098 206.176 30.506 204.746 29.332 C 203.483 28.175 202.803 26.514 202.891 24.802 C 202.894 23.697 203.102 22.602 203.505 21.572 C 203.904 20.518 204.488 19.543 205.228 18.692 C 206.079 17.694 207.147 16.904 208.351 16.382 C 209.617 15.851 210.979 15.585 212.352 15.602 M 211.988 18.992 C 210.772 18.994 209.64 19.616 208.986 20.642 C 208.162 21.884 207.751 23.354 207.811 24.842 C 207.757 25.604 207.984 26.358 208.449 26.962 C 208.926 27.466 209.604 27.73 210.298 27.682 C 211.514 27.681 212.646 27.059 213.3 26.032 C 214.127 24.784 214.541 23.308 214.485 21.812 C 214.54 21.059 214.317 20.311 213.857 19.712 C 213.375 19.208 212.694 18.944 211.998 18.992" transform="matrix(0.999999, -0.001153, 0.001153, 0.999999, -0.026721, 0.243455)"/>
+            <path d="M 220.821 24.882 L 222.552 15.882 L 227.242 15.882 L 225.753 23.512 C 225.642 24.012 225.572 24.432 225.521 24.782 C 225.476 25.056 225.449 25.334 225.44 25.612 C 225.414 26.083 225.58 26.545 225.899 26.892 C 226.256 27.213 226.729 27.375 227.208 27.342 C 228.165 27.348 229.077 26.94 229.71 26.222 C 230.474 25.334 230.975 24.25 231.153 23.092 L 232.571 15.972 L 237.271 15.972 L 234.415 30.632 L 229.685 30.632 L 230.117 28.492 C 229.399 29.273 228.544 29.917 227.595 30.392 C 226.723 30.805 225.769 31.017 224.804 31.012 C 223.671 31.083 222.557 30.701 221.705 29.952 C 220.939 29.148 220.541 28.061 220.609 26.952 C 220.609 26.652 220.609 26.322 220.61 25.952 C 220.61 25.582 220.701 25.262 220.771 24.892" transform="matrix(0.999999, -0.001153, 0.001153, 0.999999, -0.026887, 0.263983)"/>
+            <path d="M 244.824 11.756 L 244.069 15.956 L 248.859 15.956 L 248.185 19.306 L 243.395 19.306 L 242.188 25.516 C 242.158 25.631 242.134 25.748 242.117 25.866 C 242.112 25.955 242.112 26.046 242.117 26.136 C 242.091 26.473 242.238 26.8 242.506 27.006 C 242.922 27.21 243.384 27.299 243.846 27.266 L 246.266 27.266 L 245.602 30.616 L 241.662 30.616 C 240.515 30.693 239.377 30.38 238.433 29.726 C 237.676 29.098 237.265 28.147 237.326 27.166 C 237.326 26.926 237.326 26.656 237.327 26.386 C 237.327 26.116 237.387 25.826 237.448 25.536 L 240.074 11.756 Z" transform="matrix(0.999999, -0.001153, 0.001153, 0.999999, -0.024273, 0.280301)"/>
+            <path d="M 42.653 1.811 L 28.043 36.621 L 18.523 36.621 L 11.375 8.831 C 10.937 7.121 10.568 6.491 9.238 5.771 C 6.415 4.408 3.434 3.4 0.362 2.771 L 0.573 1.771 L 15.893 1.771 C 17.966 1.766 19.731 3.273 20.049 5.321 L 23.816 25.461 L 33.213 1.771 L 42.673 1.771 M 79.956 25.221 C 79.967 16.041 67.257 15.531 67.352 11.421 C 67.353 10.181 68.575 8.851 71.175 8.511 C 74.231 8.228 77.306 8.777 80.073 10.101 L 81.662 2.731 C 78.96 1.707 76.095 1.179 73.204 1.171 C 64.294 1.171 58.028 5.911 57.96 12.681 C 57.905 17.681 62.431 20.491 65.84 22.161 C 69.248 23.831 70.516 24.961 70.505 26.491 C 70.502 28.821 67.711 29.851 65.111 29.891 C 61.89 29.96 58.706 29.202 55.863 27.691 L 54.224 35.321 C 57.412 36.556 60.803 37.184 64.222 37.171 C 73.682 37.171 79.878 32.501 79.916 25.261 M 103.403 36.631 L 111.733 36.631 L 104.493 1.821 L 96.813 1.821 C 95.132 1.806 93.611 2.822 92.98 4.381 L 79.453 36.621 L 88.913 36.621 L 90.799 31.421 L 102.349 31.421 Z M 93.417 24.301 L 98.142 11.171 L 100.857 24.241 Z M 55.523 1.811 L 48.043 36.621 L 39.043 36.621 L 46.533 1.811 Z" transform="matrix(0.999999, -0.001153, 0.001153, 0.999999, -0.022067, 0.064637)"/>
+        </g>
+        <g id="visa-checkout-logo-compact">
+            <path d="M36.88,2.42,25.47,29.69H18L12.38,7.93a3,3,0,0,0-1.68-2.4,30.16,30.16,0,0,0-7-2.32l.17-.79h12a3.31,3.31,0,0,1,3.26,2.77l3,15.79L29.49,2.42h7.4M66.1,20.78c0-7.19-10-7.59-9.89-10.8,0-1,1-2,3-2.29a13.44,13.44,0,0,1,7,1.23L67.4,3.13a18.76,18.76,0,0,0-6.59-1.21c-7,0-11.88,3.71-11.91,9-.05,3.93,3.49,6.12,6.18,7.41s3.67,2.19,3.65,3.39c0,1.83-2.18,2.64-4.21,2.66a14.71,14.71,0,0,1-7.25-1.71l-1.26,6a21.17,21.17,0,0,0,7.83,1.43c7.41,0,12.25-3.64,12.28-9.32m18.41,8.91H91L85.34,2.42h-6a3.2,3.2,0,0,0-3,2L65.73,29.69h7.42l1.46-4.08h9ZM76.65,20,80.35,9.79,82.48,20ZM47,2.42,41.14,29.69H34.08L39.93,2.42Z"/>
+            <path d="M11.82,53.08a20.06,20.06,0,0,1-2.68.75,13.46,13.46,0,0,1-2.45.25,6.93,6.93,0,0,1-4.86-1.67A5.72,5.72,0,0,1,0,48a10.11,10.11,0,0,1,.58-3.41,9.2,9.2,0,0,1,1.71-2.92,8.51,8.51,0,0,1,3.18-2.4,9.51,9.51,0,0,1,4-.85,10.2,10.2,0,0,1,2.37.28,12.19,12.19,0,0,1,2.39.85l-.62,3.13a7.28,7.28,0,0,0-2-1.1,6.39,6.39,0,0,0-2.11-.35A5,5,0,0,0,5.66,43a6.55,6.55,0,0,0-1.59,4.5,3.76,3.76,0,0,0,1,2.74,3.65,3.65,0,0,0,2.69,1,7.22,7.22,0,0,0,2.17-.38,12.92,12.92,0,0,0,2.57-1.17Z"/>
+            <path d="M26.49,46.89l-1.35,6.9H21.5l1.16-5.91c.08-.38.14-.71.19-1a5,5,0,0,0,.07-.64,1.39,1.39,0,0,0-.36-1,1.43,1.43,0,0,0-1-.36,2.52,2.52,0,0,0-1.93.87,4.77,4.77,0,0,0-1.12,2.44l-1.11,5.57H13.75L16.81,38h3.65l-1.18,6.08a7.23,7.23,0,0,1,2-1.46,4.83,4.83,0,0,1,2.12-.48,3.38,3.38,0,0,1,2.42.82,3.12,3.12,0,0,1,.86,2.33c0,.21,0,.44,0,.71s-.09.54-.15.86"/>
+            <path d="M39.86,48.54l-.12.58H31.26a1.17,1.17,0,0,1,0,.17,1,1,0,0,0,0,.18,2,2,0,0,0,.67,1.65,3.1,3.1,0,0,0,2,.56,9.66,9.66,0,0,0,2.42-.35,14.54,14.54,0,0,0,2.66-1l-.55,2.82a15.35,15.35,0,0,1-2.63.71,14.75,14.75,0,0,1-2.67.24A6.17,6.17,0,0,1,29,52.86a4.31,4.31,0,0,1-1.44-3.47A7.16,7.16,0,0,1,28,46.88a7.36,7.36,0,0,1,1.36-2.23,6.66,6.66,0,0,1,2.49-1.85,8,8,0,0,1,3.23-.64,5.31,5.31,0,0,1,3.66,1.23,4.29,4.29,0,0,1,1.35,3.31c0,.25,0,.54-.06.85s-.1.63-.18,1m-3.41-1.65a1.71,1.71,0,0,0,0-.27,1.44,1.44,0,0,0,0-.27A1.75,1.75,0,0,0,36,45.05a1.79,1.79,0,0,0-1.31-.49,2.88,2.88,0,0,0-1.82.59,3.7,3.7,0,0,0-1.13,1.73Z"/>
+            <path d="M52,42.8l-.57,3A7.36,7.36,0,0,0,50,45a4.38,4.38,0,0,0-1.39-.26,3.77,3.77,0,0,0-2.9,1.2A4.27,4.27,0,0,0,44.6,49a2.32,2.32,0,0,0,.7,1.83,2.76,2.76,0,0,0,2,.65,6.23,6.23,0,0,0,1.67-.25,6.09,6.09,0,0,0,1.56-.75l-.55,3a10.87,10.87,0,0,1-1.82.47,10.59,10.59,0,0,1-1.83.16,6.23,6.23,0,0,1-4.12-1.2,4.17,4.17,0,0,1-1.43-3.41,7,7,0,0,1,.52-2.69,7.21,7.21,0,0,1,1.51-2.35,6.89,6.89,0,0,1,2.55-1.7,8.86,8.86,0,0,1,3.29-.57,9.37,9.37,0,0,1,1.71.16A10.58,10.58,0,0,1,52,42.8"/>
+            <polygon points="54.95 38.03 58.6 38.03 56.94 46.56 61.83 42.45 66.11 42.45 59.51 47.69 64.3 53.79 60.17 53.79 56.48 48.89 55.53 53.79 51.9 53.79 54.95 38.03"/>
+            <path d="M71.81,42.16a5.78,5.78,0,0,1,4,1.29A4.48,4.48,0,0,1,77.23,47a6.89,6.89,0,0,1-.47,2.5,7.21,7.21,0,0,1-1.32,2.22A6.68,6.68,0,0,1,73,53.47a7.86,7.86,0,0,1-3.14.6,5.79,5.79,0,0,1-3.94-1.28,4.49,4.49,0,0,1-1.45-3.51,7,7,0,0,1,.47-2.49,7.31,7.31,0,0,1,1.33-2.23,6.91,6.91,0,0,1,2.42-1.8,8,8,0,0,1,3.11-.6m-.31,2.59A2.73,2.73,0,0,0,69.18,46a5.47,5.47,0,0,0-.91,3.25,2.35,2.35,0,0,0,.51,1.63,1.76,1.76,0,0,0,1.42.57,2.76,2.76,0,0,0,2.33-1.27,5.53,5.53,0,0,0,.9-3.27,2.47,2.47,0,0,0-.48-1.62,1.84,1.84,0,0,0-1.44-.56"/>
+            <path d="M78.35,49.37l1.32-6.93h3.63l-1.14,5.9a9.71,9.71,0,0,0-.19,1,4.11,4.11,0,0,0-.07.63,1.38,1.38,0,0,0,.36,1,1.45,1.45,0,0,0,1,.36,2.57,2.57,0,0,0,1.93-.88A4.87,4.87,0,0,0,86.35,48l1.09-5.58h3.64L88.87,53.79H85.22l.33-1.66a7.07,7.07,0,0,1-1.95,1.46,5.05,5.05,0,0,1-2.16.49,3.32,3.32,0,0,1-2.4-.82,3.07,3.07,0,0,1-.85-2.33,5.77,5.77,0,0,1,0-.74,6.14,6.14,0,0,1,.12-.82"/>
+            <path d="M96.91,39.22l-.62,3.23H100L99.49,45H95.77l-.92,4.81a1.67,1.67,0,0,0-.06.27.76.76,0,0,0,0,.21.8.8,0,0,0,.3.67,2.05,2.05,0,0,0,1.05.19H98l-.51,2.6H94.43a3.9,3.9,0,0,1-2.49-.68,2.39,2.39,0,0,1-.86-2c0-.18,0-.39,0-.61s.07-.44.1-.66l2.08-10.62Z"/>
+        </g>
+
+    </defs>
+
+    <g id="checkout-button" class="standard non-cobrand height47">
+        <rect class="button-rail neutral"  x="1%" y="8%" width="99%" height="83%" rx="4" ry="4"/>
+        <svg id='spinner' x="25%"  y="0" width="90%"  height="90%"  viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
+              <g id="spinners" opacity="0">
+                  <circle class="spinner-secondary" cx="50" cy="50" r="30" fill="none" stroke="#F7B600" stroke-width="9"
+                          stroke-dasharray="180" stroke-dashoffset="50" stroke-linecap="round">
+                          <animate attributeName="stroke-dashoffset" dur="2s" values="0;180;0" keyTimes="0;.5;1" begin="0s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle class="spinner-primary" cx="50" cy="50" r="30" fill="none" stroke="#fff" stroke-width="9"
+                          stroke-dasharray="120" stroke-dashoffset="30" stroke-linecap="round">
+                  </circle>
+              </g>
+        </svg>
+
+        <g class="card-art-group">
+            <g>
+                <svg viewBox="0 0 74 50" preserveAspectRatio="xMinYMid meet">
+                    <use id="chevron-element-neutral" xlink:href="#{CHEVRON_IMAGE_NEUTRAL_PLACEHOLDER}" class = "chevron-image" height="67" width="77" y="-1" x="-1"/>
+                </svg>
+                <svg viewBox="0 0 75 50" preserveAspectRatio="xMinYMid meet">
+                    <use id="chevron-element-standard" xlink:href="#chevron-image-standard" class = "chevron-image" height="67" width="77" y="2" x="2"/>
+                </svg>
+                <svg viewBox="0 0 77 50" preserveAspectRatio="xMinYMid meet">
+                    <rect class="card-button-seperator disable" x="77"  y="4" width="1" height="83%"/>
+                    <image id="card-art-image" class="card-art-image-hide" xlink:href="{CARD_ART_URI_PLACEHOLDER}" height="67" width="77" y="-8" x="0"/>
+                </svg>
+            </g>
+            <svg viewBox="0 0 100 50" preserveAspectRatio="xMinYMid meet">
+                <g clip-path="url(#card-art-sheen-mask)">
+                    <use id="sheen-view" xlink:href="#card-art-sheen" x="-20" y="-20" height="10" width="10"/>
+                </g>
+            </svg>
+        </g>
+
+
+        <g id="logo-group">
+        <svg id="nonCobrandLogos" class="non-cobrand-logos" x="50%" y="50%" style="overflow:visible" viewBox="0 0 120 100" preserveAspectRatio="xMinYMin meet">
+            <g id="non-cobrand-logos" data-name="Visa Checkout" transform="translate(100,0) scale(.95)">
+                <use xlink:href="#visa-checkout-logo-standard" class="logo-text" transform="translate(-150, -20) scale(1)"></use>
+            </g>
+        </svg>
+        
+        <svg  id="coBrandLogos" class="cobrand-logos">
+            <defs>
+                <style>
+                    @media all and (min-width: 430px) {
+                        .wide {visibility: visible;}
+                        .compact {visibility: hidden;}   
+                    }
+                    @media all and (max-width: 430px) {
+                        .wide {visibility: hidden;}
+                        .compact {visibility: visible;}
+                    }
+                </style>
+            </defs>
+                <svg id="visaCheckoutStandard" x="50%" y="50%" style="overflow:visible" viewBox="0 0 120 100" preserveAspectRatio="xMinYMin meet">
+                    <g id="checkout-standard" data-name="Visa Checkout" class="wide" transform="translate(40,5) scale(.9)">
+                        <use xlink:href="#visa-checkout-logo-standard" class="logo-text" transform="translate(-150, -25) scale(1)"></use>
+                        <use xlink:href="#logo-seperator" transform="translate(120,-20)"></use>
+                        <use xlink:href="#co-brand-logo" class="logo-text" transform="translate(137, -19) scale(2.2)"></use>
+                        <use xlink:href="#co-brand-logo-samsung" class="logo-text" transform="translate(-90,-38) scale(1.5)"></use>
+                    </g>
+                </svg>
+            
+                <svg id="visaCheckoutCompact" x="50%" y="50%" style="overflow:visible" preserveAspectRatio="xMinYMin meet" viewBox="0 0 120 100">
+                    <g id="checkout-compact" class="compact" transform="translate(0,5)">
+                        <use xlink:href="#visa-checkout-logo-compact" class="logo-text" transform="translate(-40,-33)"></use>
+                        <use xlink:href="#logo-seperator" transform="translate(70,-25)"></use>
+                        <use xlink:href="#co-brand-logo" class="logo-text" transform="translate(86,-23) scale(2.5)"></use>
+                        <use xlink:href="#co-brand-logo-samsung" class="logo-text" transform="translate(-160,-40) scale(1.6)"></use>
+                    </g>
+                </svg>
+        </svg> 
+        </g>  
+    </g>
+</svg>

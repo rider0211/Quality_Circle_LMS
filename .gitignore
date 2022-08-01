@@ -1,0 +1,10 @@
+
+
+public/avatars/**/*
+public/assets
+/3.0.2/vendor
+/assets/vendor
+/phpMyAdmin/vendor
+/assets/uploads
+/mautic/vendor
+vendor
